@@ -1,7 +1,6 @@
 import queue
 import numpy as np
 from datetime import datetime
-
 import note #USER PASSWORD DATA
 import API
 from app import refresh_price
@@ -17,7 +16,6 @@ back_26_date = "2022-10-12"
 reference_date = "2022-11-18"
 volume = 0.01
 buffor = 1
-
 clear = lambda: os.system('cls')
 
 def looking_for_signals():
@@ -37,8 +35,8 @@ def looking_for_signals():
     sl_sig5th = 0
     sell_signal = 0
     loop_refresh = 30
-    loop = True
     value = 0
+    loop = True
     while loop:
         print(f'Loop refresh: {loop_refresh}')
         print(buy_signal, sell_signal)
@@ -101,7 +99,6 @@ def looking_for_signals():
             bl_sig5th += 1
         elif len(bl5) >= 6:
             buy_signal += 1
-
             bl_sig3th = 0
             bl_sig4th = 0
             bl_sig5th = 0
@@ -171,6 +168,7 @@ def manage_transaction(trans, cmd, order):
 
 
 def main():
+    
     loop = True
     while loop:
         time.sleep(1)
