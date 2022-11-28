@@ -2,7 +2,7 @@ import queue
 import numpy as np
 from datetime import datetime
 
-import note
+import note #USER PASSWORD DATA
 import API
 from app import refresh_price
 from ichimoku import df
@@ -185,43 +185,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""first = {}
-    secound = {}
-
-    print("Close: ",df.loc[reference_date]['Close'])
-    print("tenken sen", df.loc[reference_date]['tenkan_sen'])
-    print("kijun sen", df.loc[reference_date]['kijun_sen'])
-    print("senkou span a", df.loc[reference_date]['senkou_span_a'])
-    print("senkou span b", df.loc[reference_date]['senkou_span_b'])
-    print(f"chikou_span {back_26_date}", df.loc[back_26_date]['chikou_span'])
-    print(refresh_price(symbol))
-    balance = API.get_Balance()
-    print(balafddgdsfgdnace)
-    API.logout()
-        """
 
